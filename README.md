@@ -1,1 +1,3 @@
-# MOCKUP-May-14---TECH-KARO-WEB
+# Mockups May 14
+
+Check the mockups folder and create a pixel perfect clone!

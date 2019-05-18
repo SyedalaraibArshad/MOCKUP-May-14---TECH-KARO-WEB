@@ -1,3 +1,2 @@
 # Mockups May 14
-
-Check the mockups folder and create a pixel perfect clone!
+Published link: https://sheikhuzair26.github.io/MOCKUP-May-14---TECH-KARO-WEB/

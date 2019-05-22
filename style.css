@@ -89,6 +89,7 @@ header ul {
 .intro h1 {
     font-size: 5em;
     font-weight: bold;
+    text-align: center
 }
 
 /*  Applying */
@@ -194,7 +195,8 @@ i.fab.fa-js:hover {
     font-family: 'Lobster Two', cursive;
     background-color: #ddceb4;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     padding-top: 30px;
     text-align: center;
@@ -206,7 +208,7 @@ i.fab.fa-js:hover {
     border-top: 1px solid black;
     padding: 17px;
     font-size: 18px;
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 20px;
     word-spacing: 1px;
     letter-spacing: 1px;
@@ -247,16 +249,13 @@ figcaption h3 {
 
 .icon span:hover {
     background-color: white;
+    color: #170d0e;
 }
 
 .icon span {
     border: 1px solid;
     border-radius: 100%;
     padding: 10px;
-}
-
-.icon i:hover {
-    color: black;
 }
 
 figure {
@@ -279,7 +278,7 @@ figcaption {
 }
 
 figure:hover figcaption {
-    opacity: 0.8;
+    opacity: 0.6;
     border-radius: 3%;
 }
 
@@ -371,25 +370,22 @@ footer:hover i {
         margin: 15px 0 25px;
         padding: 16px;
         font-size: 19px;
-        line-height: 20px;
     }
     .intro {
-        text-align: center;
         padding-top: 20px;
-        display: flex;
+    }
+    #service-portfolio {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width:550px) {
     .intro h1 {
         font-size: 3em;
-        font-weight: bold;
-        text-align: center
     }
     .intro {
         padding-top: 30px;
-        display: flex;
-        flex-direction: column;
     }
     .techintro {
         margin: 10px 0 24px;
@@ -404,10 +400,8 @@ footer:hover i {
         flex-direction: column;
     }
     .service-container {
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
     }
     /* 3rd Section */
     .portfolio-intro {
@@ -417,156 +411,110 @@ footer:hover i {
         line-height: 12px;
     }
     .portfoliopics-container {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
     .portfoliopics-container img {
-        background-size: contain;
-        background-repeat: no-repeat;
         width: 231px;
         height: 210px;
-        cursor: pointer;
-        border-radius: 3%;
-        margin: 10px;
     }
-}
-
-@media screen and (max-width:420px) {
-    header {
-        background-color: #4c4c4c;
-        display: flex;
-        align-items: center;
-        padding: 5px 0;
-        justify-content: space-between;
-        margin-top: 3px;
-        line-height: 10px;
+    @media screen and (max-width:420px) {
+        header {
+            padding: 5px 0;
+        }
+        #logo img {
+            height: 30px;
+            padding-left: 30px;
+            margin-top: 0px;
+        }
+        #menu li {
+            padding: 0px;
+            padding-right: 28px;
+        }
+        .intro {
+            padding-top: 15px;
+        }
+        .techintro {
+            margin: 10px 0 24px;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 11px;
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .service-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfolio-intro {
+            margin: 15px 0 1px;
+            padding: 11px;
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            line-height: 9px;
+        }
+        .portfolios {
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfoliopics-container {
+            flex-direction: column;
+        }
+        .portfoliopics-container img {
+            width: 309px;
+            height: 220px;
+            border-radius: 6px;
+        }
     }
-    #logo img {
-        height: 30px;
-        padding-left: 30px;
-        margin-top: 0px;
-        color: black;
+    /* My Mobile Galazxy View */
+    @media screen and (max-width: 370px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+        header a {
+            font-size: 14px;
+        }
+        #menu li {
+            padding-right: 11px;
+            font-size: 12px;
+        }
+        .intro h1 {
+            font-size: 2em;
+        }
+        #logo img {
+            height: 28px;
+            padding-left: 13px;
+        }
+        .techintro {
+            margin: 10px 0 24px;
+            padding: 8px;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 10px;
+        }
+        .join {
+            padding: 1em 2em;
+        }
+        .portfoliopics-container img {
+            width: 215px;
+            border-radius: 6px;
+        }
+        .socials span {
+            margin: 0px 7px 0px 9px;
+            font-size: 20px;
+        }
+        .contact-desc h2 {
+            margin: 0px 0px 5px;
+            padding: 20px;
+        }
+        footer {
+            font-size: 10px;
+            font-family: serif;
+        }
     }
-    #menu li {
-        padding: 0px;
-        padding-right: 28px;
-    }
-    .intro {
-        text-align: center;
-        padding-top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .techintro {
-        margin: 10px 0 24px;
-        padding: 10px;
-        font-size: 10px;
-        font-weight: bold;
-        line-height: 11px;
-    }
-    .box-container {
-        background: url(images/floral.png);
-        font-family: 'Lobster Two', cursive;
-        background-color: #efece7;
-        display: flex;
-        flex-direction: column;
-    }
-    .service-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .portfolio-intro {
-        margin: 15px 0 1px;
-        padding: 11px;
-        font-size: 10px;
-        display: flex;
-        flex-direction: column;
-        line-height: 9px;
-        border-width: 2px;
-    }
-    .portfolios {
-        display: flex;
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .portfoliopics-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .portfoliopics-container img {
-        width: 309px;
-        height: 220px;
-        cursor: pointer;
-        border-radius: 6px;
-        margin: 10px;
-    }
-}
-
-/* My Mobile Galazxy View */
-
-@media screen and (max-width: 370px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        overflow-y: scroll;
-    }
-    header a {
-        color: #bfbfbf;
-        font-weight: bold;
-        text-shadow: 0px 0px 1px #bfbfbf;
-        font-size: 14px;
-    }
-    #menu li {
-        padding-right: 11px;
-        font-size: 12px;
-    }
-    .intro h1 {
-        font-size: 2em;
-        font-weight: bold;
-        text-align: center;
-    }
-    #logo img {
-        height: 28px;
-        padding-left: 13px;
-        color: black;
-    }
-    .techintro {
-        margin: 10px 0 24px;
-        padding: 8px;
-        font-size: 10px;
-        font-weight: bold;
-        line-height: 10px;
-    }
-    .join {
-        padding: 1em 2em;
-    }
-    .portfoliopics-container img {
-        width: 215px;
-        height: 190px;
-        border-radius: 6px;
-        margin: 10px;
-    }
-    .socials span {
-        padding: 15px;
-        margin: 0px 7px 0px 9px;
-        border: 1px solid;
-        border-radius: 100%;
-        font-size: 20px;
-    }
-    .contact-desc h2 {
-        margin: 0px 0px 5px;
-        padding: 20px;
-    }
-    footer {
-        padding: 12px;
-        font-size: 10px;
-        word-spacing: 1px;
-        font-family: serif;
-    }
-}
